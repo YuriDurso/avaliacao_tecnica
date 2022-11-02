@@ -27,7 +27,7 @@ function retornaNomes() {
 //funcao para adicionar um ID especifico para cada pessoa do array, usando FOR
 function adicionaID() {
     for (let i = 0; i < pessoas.length; i++) {
-        pessoas[i] = { Id: i, name: pessoas[i].name, age: pessoas[i].age };
+        pessoas[i] = { Id: (i+1), name: pessoas[i].name, age: pessoas[i].age };
     }
     return pessoas;
 }
